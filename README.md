@@ -3,8 +3,8 @@
 3W Socials is a modern, high-fidelity social networking platform built exclusively with the MERN stack. Designed strictly to industry standards, it features an ultra-premium glassmorphic UI, robust server-side functionality, and seamless media handling.
 
 ## 🚀 Live Demo
-- **Frontend URL:** [Insert Frontend Link Here]
-- **Backend Repository:** [Insert Backend Link Here, if applicable]
+- **Frontend URL:** [https://3-w-full-stack-internship-assignmen-nine.vercel.app/](https://3-w-full-stack-internship-assignmen-nine.vercel.app/)
+- **Backend Hosted API (Render):** [https://threew-full-stack-internship-assignment-1.onrender.com](https://threew-full-stack-internship-assignment-1.onrender.com)
 
 ## ✨ Key Features
 - **Ultra-Premium Glassmorphic UI:** A visually stunning, highly responsive interface built with modern CSS techniques (backdrop-filters, dynamic mesh gradients, split-screen auth layouts, and floating components).

@@ -11,7 +11,7 @@ import authMiddleware from './middleware/authMiddleware.js';
 const app = express();
 
 app.use(cors({
-    origin: 'https://3-w-full-stack-internship-assignmen-nine.vercel.app' || 'http://localhost:5173',
+    origin: ['https://3-w-full-stack-internship-assignmen-nine.vercel.app', 'http://localhost:5173'],
     credentials: true
 }));
 app.use(express.json());
