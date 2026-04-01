@@ -14,6 +14,7 @@ const Login = () => {
     try {
       const res = await axios.post('/api/auth/login', { email, password });
       localStorage.setItem('user', JSON.stringify(res.data.user));
+      localStorage.setItem('token', res.data.token);
       navigate('/');
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed');
@@ -63,9 +64,7 @@ const Login = () => {
                 />
               </div>
               
-              <div className="auth-forgot">
-                <a href="#">Forgot password?</a>
-              </div>
+             
               
               <button type="submit" className="auth-submit-btn">
                 Log In <ArrowRight size={18} />
