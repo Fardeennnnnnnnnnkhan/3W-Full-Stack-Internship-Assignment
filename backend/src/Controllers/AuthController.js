@@ -21,7 +21,7 @@ async function registerUser(req, res) {
 
         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET_KEY, { expiresIn: '24h' });
         
-        res.cookie('token', token, { httpOnly: true, sameSite: 'lax' });
+        res.cookie('token', token, { httpOnly: true, sameSite: 'none', secure: true });
         res.status(201).json({
             message: "User Registered Successfully",
             user: { _id: user._id, username: user.username, email: user.email }, 
@@ -48,7 +48,7 @@ async function loginUser(req, res) {
 
         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET_KEY, { expiresIn: '24h' });
         
-        res.cookie('token', token, { httpOnly: true, sameSite: 'lax' });
+        res.cookie('token', token, { httpOnly: true, sameSite: 'none', secure: true });
         res.status(200).json({
             message: "Logged in Successfully",
             user: { _id: user._id, username: user.username, email: user.email }, 

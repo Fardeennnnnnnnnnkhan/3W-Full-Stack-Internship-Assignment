@@ -7,7 +7,6 @@ import cors from 'cors';
 import registerRouter from './routes/authRoute.js';
 import cookieParser from 'cookie-parser';
 import authMiddleware from './middleware/authMiddleware.js';
-
 const app = express();
 
 app.use(cors({
